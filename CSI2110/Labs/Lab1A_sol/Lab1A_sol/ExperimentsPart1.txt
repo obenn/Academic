@@ -1,0 +1,41 @@
+
+Part 1 Findings. (By Lucia Moura)
+
+I am running Java7.
+
+In my system, T(n)/ (n log n) converged to a constant between 6 and 7 for T(n)/n log n.
+I noticed this value actually slightly decreased.
+This indicates the T(n) is a bit below O(n log n)
+
+The value T(n)/(n*n) decreased a lot, showing T(n) grows way below O(n*n),
+i.e. T(n) does not seem to be Omega(n*n).
+
+I include a sample output in my system.
+
+---------------------------------------------
+Enter 0 to test Arrays.sort(), 1 for unique, any other number to exit
+0
+Enter number of arrays to test
+20
+Enter largest array size
+2000
+N: 100, T(n): 8000 nanosecs, T(n)/(n*n): 0.8, T(n)/(nlogn): 12.041199826559247
+N: 200, T(n): 16000 nanosecs, T(n)/(n*n): 0.4, T(n)/(nlogn): 10.465921651825022
+N: 300, T(n): 24000 nanosecs, T(n)/(n*n): 0.26666666666666666, T(n)/(nlogn): 9.721930086076433
+N: 400, T(n): 29000 nanosecs, T(n)/(n*n): 0.18125, T(n)/(nlogn): 8.38746022704127
+N: 500, T(n): 40000 nanosecs, T(n)/(n*n): 0.16, T(n)/(nlogn): 8.922811151820515
+N: 600, T(n): 48000 nanosecs, T(n)/(n*n): 0.13333333333333333, T(n)/(nlogn): 8.66849839431632
+N: 700, T(n): 73000 nanosecs, T(n)/(n*n): 0.1489795918367347, T(n)/(nlogn): 11.034111189745307
+N: 800, T(n): 73000 nanosecs, T(n)/(n*n): 0.1140625, T(n)/(nlogn): 9.461982655522318
+N: 900, T(n): 60000 nanosecs, T(n)/(n*n): 0.07407407407407407, T(n)/(nlogn): 6.793168236350206
+N: 1000, T(n): 75000 nanosecs, T(n)/(n*n): 0.075, T(n)/(nlogn): 7.52574989159953
+N: 1100, T(n): 86000 nanosecs, T(n)/(n*n): 0.07107438016528926, T(n)/(nlogn): 7.738255077394094
+N: 1200, T(n): 74000 nanosecs, T(n)/(n*n): 0.05138888888888889, T(n)/(nlogn): 6.028718323452572
+N: 1300, T(n): 80000 nanosecs, T(n)/(n*n): 0.047337278106508875, T(n)/(nlogn): 5.949023702170986
+N: 1400, T(n): 105000 nanosecs, T(n)/(n*n): 0.05357142857142857, T(n)/(nlogn): 7.176201800678279
+N: 1500, T(n): 93000 nanosecs, T(n)/(n*n): 0.04133333333333333, T(n)/(nlogn): 5.876361290927135
+N: 1600, T(n): 98000 nanosecs, T(n)/(n*n): 0.03828125, T(n)/(nlogn): 5.7544933817164186
+N: 1700, T(n): 114000 nanosecs, T(n)/(n*n): 0.03944636678200692, T(n)/(nlogn): 6.2488891939135875
+N: 1800, T(n): 128000 nanosecs, T(n)/(n*n): 0.03950617283950617, T(n)/(nlogn): 6.575970962762555
+N: 1900, T(n): 120000 nanosecs, T(n)/(n*n): 0.0332409972299169, T(n)/(nlogn): 5.7986732437755055
+N: 2000, T(n): 134000 nanosecs, T(n)/(n*n): 0.0335, T(n)/(nlogn): 6.109914098320658

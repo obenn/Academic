@@ -1,0 +1,34 @@
+
+Part 2 Findings. (By Lucia Moura)
+
+I am running Java7.
+I noticed a big variation from one run to the next; should
+calculate the average over 20 inputs to get more accurate time.
+
+Times for unique1 and unique2 in my system given below (in secs):
+n=5       0.2E-5, 1.5E-5
+n=50      7.81E-4,  5.91E-4
+n=200     0.001037, 0.000195
+n=10000   0.053096, 0.002178
+n=20000   0.076935, 0.002254
+n=50000   0.461847, 0.025375
+n=100000  4.836876, 0.036365
+n=200000 19.637134, 0.04425
+n=400000 80.024299 
+
+In 1 minute I could run:
+unique1 for n=70,000
+unique2 for n=8,000,000
+
+Sample outputs:
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+1
+Enter n value
+70000
+Time Elapsed: 0.922336 secs
+
+Enter 1 to test unique1, 2 for unique2, any other number to exit
+2
+Enter n value
+8000000
+Time Elapsed: 0.999719 secs
